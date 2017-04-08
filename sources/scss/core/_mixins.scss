@@ -1,0 +1,99 @@
+//mixins
+//responsive
+$mobile: 512px;
+$tablet: 1024px;
+$laptop: 1280px;
+@mixin mobile {
+    @media (min-width: 0px) and (max-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 0px) and (max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: 0px) and (max-width: #{$laptop}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$laptop + 1px}) {
+        @content;
+    }
+}
+
+//fonts
+@mixin fontXXL {
+  font-family: $Oswald;
+  font-weight: $ExtraLight;
+  font-size: $fontsize90;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include tablet {
+    font-size: $fontsize75;
+  }
+  @include mobile {
+    font-size: $fontsize65;
+  }
+}
+@mixin fontXL {
+  font-family: $Oswald;
+  font-weight: $Light;
+  font-size: $fontsize28;
+  letter-spacing: 3px;
+  line-height: 120%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include tablet {
+    font-size: $fontsize24;
+  }
+  @include mobile {
+    font-size: $fontsize22;
+  }
+}
+@mixin fontL {
+  font-family: $Raleway;
+  font-weight: $Regular;
+  font-size: $fontsize18;
+  line-height: 140%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include mobile {
+    font-size: $fontsize16;
+  }
+}
+@mixin fontM {
+  font-family: $Raleway;
+  font-weight: $Regular;
+  font-size: $fontsize16;
+  line-height: 140%;
+  @include mobile {
+    font-size: $fontsize14;
+  }
+}
+@mixin fontButton {
+  font-family: $Raleway;
+  font-weight: $SemiBold;
+  font-size: $fontsize18;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include mobile {
+    font-size: $fontsize16;
+  }
+}
+//
+// @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+//     @font-face {
+//         font-family: $font-family;
+//         src: url('#{$file-path}.eot');
+//         src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), //url('#{$file-path}.woff') format('woff'),
+//         url('#{$file-path}.ttf') format('truetype'),
+//         url('#{$file-path}.svg##{$font-family}') format('svg');
+//         font-weight: $font-weight;
+//         font-style: $font-style;
+//     }
+// }

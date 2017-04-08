@@ -1,0 +1,16 @@
+/* Generic imports */
+@import 'core/reset';
+@import 'core/mixins';
+@import 'core/config';
+@import 'core/fonts';
+@import 'core/components';
+@import 'core/slick';
+@import 'core/slick-theme';
+/* Module imports */
+@import '../modules/hero/hero';
+@import '../modules/about/about.scss';
+@import '../modules/portfolio/portfolio.scss';
+@import '../modules/projectDescription/projectDescription.scss';
+@import '../modules/contact/contact.scss';
+@import '../modules/footer/footer.scss';
+@import '../modules/fish/fish.scss';

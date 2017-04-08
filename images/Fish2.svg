@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 106.1" style="enable-background:new 0 0 24 106.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4555A5;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:none;stroke:#C5C9E6;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<title>Asset 5</title>
+<g id="Layer_2">
+	<g id="primary-light">
+		<path class="st0" d="M22.6,0c-1,5.1-5.5,8.7-10.7,8.7C6.8,8.7,2.4,5,1.4,0c-3.1,5.9-0.8,13.1,5.1,16.2s13.1,0.8,16.2-5.1
+			C24.5,7.6,24.5,3.5,22.6,0z"/>
+		<ellipse class="st0" cx="12" cy="57.4" rx="10.8" ry="48.7"/>
+		<g>
+			<defs>
+				<ellipse id="SVGID_1_" cx="12" cy="57.1" rx="10.8" ry="48.7"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st1">
+				<ellipse class="st2" cx="12.1" cy="78.3" rx="22.5" ry="40.8"/>
+				<ellipse class="st2" cx="12" cy="92.7" rx="22.5" ry="40.8"/>
+				<ellipse class="st2" cx="12" cy="106.2" rx="22.5" ry="40.8"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

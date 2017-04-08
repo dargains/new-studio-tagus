@@ -1,0 +1,197 @@
+/*Generic Components*/
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lang {
+  position: fixed;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+}
+
+.button {
+  position: relative;
+  outline: 0 !important;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+  border: 2px solid;
+  border-color: currentColor;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  a {
+    @include fontButton;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    &:before {
+      left: -30%;
+    }
+    &:after {
+      right: -30%;
+    }
+  }
+  &:before,
+  &:after {
+    content: '';
+    height: calc(100% + 4px);
+    width: 80%;
+    top: -2px;
+    display: block;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    transform: skewX(45deg);
+    z-index: 1;
+  }
+  &:before {
+    left: -130%;
+
+  }
+  &:after {
+    right: -130%;
+  }
+}
+
+.btn-light {
+  @extend .button;
+  color: $color-white;
+  a {
+    color: currentColor;
+  }
+  &:before,
+  &:after {
+    background-color: $color-primary-text;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $color-primary-text;
+    border-color: $color-white;
+    background-color: $color-white;
+  }
+}
+
+.btn-dark {
+  @extend .button;
+  color: $color-primary-text;
+  a {
+    color: currentColor;
+  }
+  &:before,
+  &:after {
+    background-color: $color-white;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $color-white;
+    border-color: $color-primary-text;
+    background-color: $color-primary-text;
+  }
+}
+
+.btn-accent {
+  @extend .button;
+  color: $color-accent;
+  a {
+    color: currentColor;
+  }
+  &:before,
+  &:after {
+    background-color: $color-accent;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $color-white;
+    border-color: $color-accent;
+    background-color: $color-accent;
+  }
+}
+
+input:not([type="submit"]),
+textarea {
+  @include fontM;
+  line-height: 40px;
+  padding-left: 20px;
+  width: 100%;
+  margin: 20px 0;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  border: 2px solid $color-primary-text;
+  transition: all 0.2s ease-in-out;
+  @include tablet {
+    margin: 10px auto;
+  }
+}
+textarea {
+   resize: none;
+}
+input:not([type="submit"]) {
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+input.error,
+textarea.error {
+  color: $color-error;
+  border-color: $color-error;
+}
+
+.titleBlock {
+  border-bottom: 1px solid $color-background-dark;
+  font-size: 0;
+
+  .left-block,
+  .right-block {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .left-block {
+    padding: 40px 20px;
+    &__title {
+      @include fontXXL;
+      text-align: center;
+      color: $color-primary-text;
+    }
+    @include mobile {
+      padding: 40px 20px 0 20px;
+      &__title {
+        margin: 0;
+      }
+    }
+  }
+
+  .right-block {
+    border-left: 1px solid $color-background-dark;
+    padding: 60px 40px;
+
+    &__text {
+      width: 100%;
+      @include fontL;
+      color: $color-secondary-text;
+      text-align: left;
+    }
+    @include mobile {
+      padding: 20px;
+      border-left: 0;
+      &__text {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}

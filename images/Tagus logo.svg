@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 95.7 106.1" style="enable-background:new 0 0 95.7 106.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3A3293;}
+	.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#F2634B;stroke-width:5;stroke-miterlimit:10;}
+	.st2{fill:#C5C9E6;}
+	.st3{clip-path:url(#SVGID_4_);}
+	.st4{fill:none;stroke:#F2634B;stroke-width:5;stroke-miterlimit:10;}
+	.st5{fill:#4555A5;}
+	.st6{clip-path:url(#SVGID_6_);fill:none;stroke:#C5C9E6;stroke-width:5;stroke-miterlimit:10;}
+	.st7{clip-path:url(#SVGID_8_);fill:none;stroke:#C5C9E6;stroke-width:5;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_10_);fill:none;stroke:#C5C9E6;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<g id="Palette">
+</g>
+<g id="dark-gray">
+</g>
+<g id="gray">
+</g>
+<g id="primary-dark">
+</g>
+<g id="accent">
+</g>
+<g id="primary">
+</g>
+<g>
+	<path class="st0" d="M12,97.6c5.3,0,9.6,3.7,10.6,8.7c0.9-1.7,1.4-3.6,1.4-5.6c0-6.6-5.4-12-12-12s-12,5.4-12,12
+		c0,2,0.5,3.9,1.4,5.6C2.4,101.4,6.8,97.6,12,97.6z"/>
+	<ellipse class="st0" cx="12" cy="48.9" rx="10.8" ry="48.7"/>
+	<g>
+		<defs>
+			<ellipse id="SVGID_1_" cx="12" cy="49.2" rx="10.8" ry="48.7"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<line class="st1" x1="10" y1="53.8" x2="26" y2="67.9"/>
+		<line class="st1" x1="13.2" y1="53.9" x2="0" y2="68.9"/>
+		<line class="st1" x1="10" y1="41.6" x2="26.1" y2="55.7"/>
+		<line class="st1" x1="13.4" y1="41.5" x2="-1.2" y2="58.1"/>
+		<line class="st1" x1="10.1" y1="29" x2="26.1" y2="43.1"/>
+		<line class="st1" x1="13.5" y1="28.9" x2="-0.8" y2="45"/>
+	</g>
+</g>
+<path class="st2" d="M83.7,97.4c5.3,0,9.6,3.7,10.6,8.7c0.9-1.7,1.4-3.6,1.4-5.6c0-6.6-5.4-12-12-12s-12,5.4-12,12
+	c0,2,0.5,3.9,1.4,5.6C74.1,101.1,78.5,97.4,83.7,97.4z"/>
+<ellipse class="st2" cx="83.7" cy="48.6" rx="10.8" ry="48.7"/>
+<g>
+	<g>
+		<g>
+			<defs>
+				<ellipse id="SVGID_3_" cx="83.7" cy="48.6" rx="10.8" ry="48.7"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st3">
+				<line class="st4" x1="61.1" y1="69.6" x2="106.3" y2="43.8"/>
+				<line class="st4" x1="61.1" y1="56.7" x2="106.3" y2="30.9"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="primary-light">
+	<g>
+		<path class="st5" d="M58.5-0.1c-1,5-5.4,8.7-10.6,8.7c-5.3,0-9.6-3.7-10.6-8.7c-0.9,1.7-1.4,3.6-1.4,5.6c0,6.6,5.4,12,12,12
+			s12-5.4,12-12C59.8,3.5,59.3,1.6,58.5-0.1z"/>
+		<ellipse class="st5" cx="47.8" cy="57.3" rx="10.8" ry="48.7"/>
+		<g>
+			<g>
+				<g>
+					<defs>
+						<ellipse id="SVGID_5_" cx="47.8" cy="57.1" rx="10.8" ry="48.7"/>
+					</defs>
+					<clipPath id="SVGID_6_">
+						<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+					</clipPath>
+					<ellipse class="st6" cx="48" cy="78.3" rx="22.5" ry="40.8"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<defs>
+						<ellipse id="SVGID_7_" cx="47.8" cy="57.1" rx="10.8" ry="48.7"/>
+					</defs>
+					<clipPath id="SVGID_8_">
+						<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+					</clipPath>
+					<ellipse class="st7" cx="47.8" cy="92.8" rx="22.5" ry="40.8"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<defs>
+						<ellipse id="SVGID_9_" cx="47.8" cy="57.1" rx="10.8" ry="48.7"/>
+					</defs>
+					<clipPath id="SVGID_10_">
+						<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+					</clipPath>
+					<ellipse class="st8" cx="47.8" cy="106.1" rx="22.5" ry="40.8"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,71 @@
+.projectDescription {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-white;
+  opacity: 1;
+  visibility: visible;
+  transition: all .5s ease-in-out;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .wrapper{
+    height: 100%;
+  }
+  &__box {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 80%;
+    .icon-cross {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      @include tablet {
+        right: 20px;
+      }
+    }
+  }
+  &__title {
+    @include fontXL;
+    margin-bottom: 10px;
+    @include tablet {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__text {
+    @include fontL;
+    margin-bottom: 20px;
+    @include tablet {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__slider {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__slide {
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include tablet {
+      height: 70vh;
+    }
+    @include mobile {
+      height: 60vh;;
+    }
+  }
+}
