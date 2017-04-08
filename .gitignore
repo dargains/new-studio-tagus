@@ -1,3 +1,9 @@
+# Geraveis
+/html/modules/*.html
+/html/templates/*.html
+/css/main.css
+/scripts/core/*.js
+
 # Logs
 logs
 *.log
