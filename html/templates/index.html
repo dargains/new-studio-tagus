@@ -75,17 +75,91 @@
 <section class="about" data-control="ABOUT">
   <div class="wrapper">
     <div class="titleBlock">
+      <div class="left-block">
+        <h1 class="left-block__title">Sobre nós</h1>
+      </div>
+      <div class="right-block">
+        <h2 class="right-block__text">Somos uma equipa de webdevelopers baseados em Lisboa, Portugal. Nós nos orgulhamos em entregar websites de qualidade com eficiência e profissionalismo.</h2>
+      </div>
     </div>
-    <div class="pros"></div>
+    <div class="pros">
+      <article>
+        <i class="icon-diamond"></i>
+        <h1>Transparência</h1>
+        <p>Nada de surpresas. Acompanhe de perto a construção do seu projeto e apresente feedback durante o desenvolvimento.</p>
+      </article>
+      <article>
+        <i class="icon-checked"></i>
+        <h1>Compromisso</h1>
+        <p>Se pode sonhar, podemos construir. Para o Studio Tagus a satisfação total do nosso cliente é o maior compromisso.</p>
+      </article>
+      <article>
+        <i class="icon-calendar"></i>
+        <h1>Pontualidade</h1>
+        <p>Sem dores de cabeça! Seu projeto será terminado dentro do prazo determinado e com a qualidade expectada.</p>
+      </article>
+      <article>
+        <i class="icon-heart"></i>
+        <h1>Paixão</h1>
+        <p>Acima de tudo, trabalhamos por amor à nossa profissão. Por isso temos total dedicação ao que fazemos e imenso respeito por nossos clientes.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <div class="portfolio" data-control="PORTFOLIO">
   <div class="wrapper">
     <div class="titleBlock">
+      <div class="left-block">
+        <h1 class="left-block__title">Projetos</h1>
+      </div>
+      <div class="right-block">
+        <h2 class="right-block__text">Nós trabalhamos com clientes nacionais e internacionais, entregando soluções construidas com criatividade e tecnologia de ponta. Aqui está apenas alguns dos nossos projetos mais recentes.</h2>
+      </div>
     </div>
   </div>
-    <div class="portfolio__projects"></div>
+    <div class="portfolio__projects">
+      <article class="portfolio__project">
+        <div class="portfolio__mask" style="background-image:url(/images/arval.jpg)"></div>
+        <div class="portfolio__textbox">
+          <h1 class="portfolio__title">Arval Printing Machinery</h1>
+          <div class="portfolio__line"></div>
+          <p class="portfolio__text">Concept, Branding, Website</p>
+        </div>
+      </article>
+      <article class="portfolio__project">
+        <div class="portfolio__mask" style="background-image:url(/images/mealmasters.jpg)"></div>
+        <div class="portfolio__textbox">
+          <h1 class="portfolio__title">Mealmasters</h1>
+          <div class="portfolio__line"></div>
+          <p class="portfolio__text">Concept, Branding, Website</p>
+        </div>
+      </article>
+      <article class="portfolio__project">
+        <div class="portfolio__mask" style="background-image:url(/images/hazyshade.jpg)"></div>
+        <div class="portfolio__textbox">
+          <h1 class="portfolio__title">Hazy Shade of Spring</h1>
+          <div class="portfolio__line"></div>
+          <p class="portfolio__text">Website</p>
+        </div>
+      </article>
+      <article class="portfolio__project">
+        <div class="portfolio__mask" style="background-image:url(/images/megalancers.jpg)"></div>
+        <div class="portfolio__textbox">
+          <h1 class="portfolio__title">Megalancers</h1>
+          <div class="portfolio__line"></div>
+          <p class="portfolio__text">Website</p>
+        </div>
+      </article>
+      <article class="portfolio__project">
+        <div class="portfolio__mask" style="background-image:url(/images/foxlife.jpg)"></div>
+        <div class="portfolio__textbox">
+          <h1 class="portfolio__title">Foxlife</h1>
+          <div class="portfolio__line"></div>
+          <p class="portfolio__text">Concept, Branding, Website</p>
+        </div>
+      </article>
+    </div>
 </div>
 
 <section class="projectDescription hide" data-control="PROJECTDESCRIPTION">
@@ -103,9 +177,20 @@
 <section class="contact" data-control="CONTACT">
   <div class="wrapper">
     <div class="titleBlock">
+      <div class="left-block">
+        <h1 class="left-block__title">Contacto</h1>
+      </div>
+      <div class="right-block">
+        <h2 class="right-block__text">Entre em contacto connosco para que possamos trabalhar juntos.</h2>
+      </div>
     </div>
     <div class="contact__details">
-      <div class="contact__textblock"></div>
+      <div class="contact__textblock">
+        <h1 class="contact__title">Fale connosco...</h1>
+        <p class="contact__text">Sinta-se à vontade para nos enviar uma mensagem utilizando o formulário do site ou, se preferir, nos contactar via whatsapp, telemóvel, skype ou e-mail.</p>
+        <h1 class="contact__title">...sem compromissos</h1>
+        <p class="contact__text">Vamos ajudar-lhe a encontrar a melhor solução.</p>
+      </div>
       <ul class="contact__contact-list">
         <li><i class="icon-phone"></i><span>+351 925 595 027<br>+351 926 967 366</span></li>
         <li><i class="icon-mail"></i><a href="#"><span>info@studiotagus.com</span></a></li>
@@ -120,14 +205,19 @@
         <a href="#" id="formSubmit" type="submit">enviar</a>
       </div>
     </form>
-    <div class="contact__message">
+    <div class="contact__message" data-success="A mensagem foi enviada com sucesso. Entraremos em contacto em breve." data-error="A mensagem não foi enviada. Por favor tente novamente.">
+      <p><i></i></p>
     </div>
   </div>
 </section>
 
 <section class="footer" data-control="FOOTER">
   <div class="wrapper">
-    <div class="footer__textbox"></div>
+    <div class="footer__textbox">
+      <p class="animated ">Feito com</p>
+      <div class="heart click-heart"></div>
+      <p class="animated ">por Studio Tagus</p>
+    </div>
   </div>
 </section>
 
@@ -144,8 +234,8 @@
 <script type="text/javascript" src="/scripts/libs/plugins/animation.gsap.min.js"></script>
 <script type="text/javascript" src="/scripts/libs/plugins/debug.addIndicators.min.js"></script>
 <!-- ************  JAVASCRIPT MAIN  ******************** -->
-<script src="/scripts/core/main.js"></script>
-<script src="/scripts/core/bundle.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/bundle.js"></script> 
 
 </body>
 

@@ -7,7 +7,7 @@ ST.PORTFOLIO = (function() {
       view.el = $(element);
       view.variables();
       view.events();
-      view.insertTextPT();
+      //view.insertTextPT();
       view.initMasonry();
     },
     variables: function() {
@@ -33,7 +33,7 @@ ST.PORTFOLIO = (function() {
       };
       view.itemsTemplate = `
         {{#each items}}
-        <article class="portfolio__project" data-project="{{name}}">
+        <article class="portfolio__project">
           <div class="portfolio__mask" style="background-image:url({{image}})"></div>
           <div class="portfolio__textbox">
             <h1 class="portfolio__title">{{title}}</h1>
@@ -85,7 +85,7 @@ ST.PORTFOLIO = (function() {
           {
             "title": "Meal Masters",
             "subtitle": "Concept, Branding, Website",
-            "text": "Se pode sonhar, podemos construir. Para o Studio Tagus a satisfação total do nosso cliente é o maior compromisso.",
+            "text": "Mealmasters é um novo conceito de fastfood, onde é possível comer uma refeição rápida e saudável.",
             "image": "/images/mealmasters.jpg"
           },
           {
@@ -163,24 +163,22 @@ ST.PORTFOLIO = (function() {
     },
     initMasonry: function(){
       var view = this;
-      //view.itemsBlock.imagesLoaded(function() {
-        view.itemsBlock.masonry({
-          itemSelector: ".portfolio__project"
-        });
-      //})
+      view.itemsBlock.masonry({
+        itemSelector: ".portfolio__project"
+      });
     },
     onSeeMoreClick: function(e) {
       e.preventDefault();
       var view = this;
-      view.feedDescription($(e.currentTarget).index());
+      view.getDescription($(e.currentTarget).index());
     },
-    feedDescription: function(project) {
+    getDescription: function(project) {
       var view = this,
           description = {};
       view.lang === "pt" ? (description = view.itemsPT.items[project]) : (description = view.itemsEN.items[project]);
-      view.openDescription(description, project);
+      view.feedDescription(description, project);
     },
-    openDescription: function(description, project) {
+    feedDescription: function(description, project) {
       var view = this;
       view.description.find(".projectDescription__title").html(description.title);
       view.description.find(".projectDescription__text").html(description.text);

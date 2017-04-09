@@ -9,7 +9,7 @@ ST.FOOTER = (function() {
       view.el = $(element);
       view.variables();
       view.events();
-      view.insertTextPT();
+      //view.insertTextPT();
     },
 
     variables: function() {

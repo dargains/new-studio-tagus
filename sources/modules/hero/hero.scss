@@ -57,6 +57,7 @@
     padding: 30px 50px;
     //width: 340px;
     width: 20%;
+    min-width: 400px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
@@ -95,7 +96,9 @@
       margin-top: 10px;
     }
     @include tablet {
-      width: 340px;
+      //width: 340px;
+      width: 50%;
+      min-width: 350px;
       text-align: center;
       h1 {
         font-size: 90px;
@@ -104,7 +107,8 @@
       }
     }
     @include mobile {
-      width: 260px;
+      //width: 260px;
+      min-width: 200px;
       padding: 20px;
       text-align: center;
       h1 {

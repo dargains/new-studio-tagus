@@ -7,7 +7,7 @@ ST.CONTACT = (function() {
       view.el = $(element);
       view.variables();
       view.events();
-      view.insertTextPT();
+      //view.insertTextPT();
       view.getClientInfo();
     },
     variables: function() {
@@ -117,10 +117,13 @@ ST.CONTACT = (function() {
       var view = this,
           messageTemplate,
           messageType;
-      view.lang === "PT" ?
-      outcome ? ((messageType = view.messageSuccessPT) && (messageTemplate = view.succcessMessageTemplate)) : ((messageType = view.messageErrorPT) && (messageTemplate = view.errorMessageTemplate)) :
-      outcome ? ((messageType = view.messageSuccessEN) && (messageTemplate = view.succcessMessageTemplate)) : ((messageType = view.messageErrorEN) && (messageTemplate = view.errorMessageTemplate));
-      view.messageBlock.html(Handlebars.compile(messageTemplate)(messageType));
+      // view.lang === "PT" ?
+      // outcome ? ((messageType = view.messageSuccessPT) && (messageTemplate = view.succcessMessageTemplate)) : ((messageType = view.messageErrorPT) && (messageTemplate = view.errorMessageTemplate)) :
+      // outcome ? ((messageType = view.messageSuccessEN) && (messageTemplate = view.succcessMessageTemplate)) : ((messageType = view.messageErrorEN) && (messageTemplate = view.errorMessageTemplate));
+      // view.messageBlock.html(Handlebars.compile(messageTemplate)(messageType));
+      outcome ?
+      view.messageBlock.find("p").html(view.messageBlock.data().success).find("i").removeClass("icon-cross").addClass("icon-checked") :
+      view.messageBlock.find("p").html(view.messageBlock.data().error).find("i").removeClass("icon-checked").addClass("icon-cross")
     },
     outcome: function(outcome) {
       var view = this;
@@ -171,15 +174,18 @@ ST.CONTACT = (function() {
     },
     sendFormData: function(dataString) {
       var view = this;
+      view.submitButton.off("click");
       $.ajax({
         type: "POST",
-        url: "/scripts/core/form-handler.php",
+        url: "/scripts/form-handler.php",
         data: dataString,
         success: function(){
-          view.outcome(true)
+          view.outcome(true);
+          view.submitButton.on("click", view.validateForm.bind(view));
         },
         error: function() {
-          view.outcome(false)
+          view.outcome(false);
+          view.submitButton.on("click", view.validateForm.bind(view));
         }
       });
     }

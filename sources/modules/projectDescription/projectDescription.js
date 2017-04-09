@@ -14,7 +14,7 @@ ST.PROJECTDESCRIPTION = (function() {
     },
     events: function() {
       var view = this;
-      view.closeButton.on("click", view.closeScreen.bind(view));
+      view.closeButton.on("click", view.closeScreen.bind(view)); 
     },
     closeScreen: function() {
       var view = this;

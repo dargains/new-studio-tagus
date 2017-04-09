@@ -28,7 +28,7 @@ gulp.task('js', () => {
   .pipe(uglify())
   .pipe(concat("bundle.js"))
   .pipe(rename({dirname: ''}))
-  .pipe(gulp.dest('../scripts/core'))
+  .pipe(gulp.dest('../scripts'))
   .pipe(browser.reload({stream: true, once: true}));
 });
 
@@ -60,6 +60,7 @@ gulp.task('watch', () => {
   gulp.watch('modules/**/*.js', ['js']);
   gulp.watch('modules/**/*.html', ['modules', 'templates']);
   gulp.watch('templates/**/*.html', ['templates']);
+  gulp.watch('layout.html');
 });
 
 gulp.task('default', [

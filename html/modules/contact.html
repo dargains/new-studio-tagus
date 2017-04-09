@@ -55,9 +55,20 @@
 <section class="contact" data-control="CONTACT">
   <div class="wrapper">
     <div class="titleBlock">
+      <div class="left-block">
+        <h1 class="left-block__title">Contacto</h1>
+      </div>
+      <div class="right-block">
+        <h2 class="right-block__text">Entre em contacto connosco para que possamos trabalhar juntos.</h2>
+      </div>
     </div>
     <div class="contact__details">
-      <div class="contact__textblock"></div>
+      <div class="contact__textblock">
+        <h1 class="contact__title">Fale connosco...</h1>
+        <p class="contact__text">Sinta-se à vontade para nos enviar uma mensagem utilizando o formulário do site ou, se preferir, nos contactar via whatsapp, telemóvel, skype ou e-mail.</p>
+        <h1 class="contact__title">...sem compromissos</h1>
+        <p class="contact__text">Vamos ajudar-lhe a encontrar a melhor solução.</p>
+      </div>
       <ul class="contact__contact-list">
         <li><i class="icon-phone"></i><span>+351 925 595 027<br>+351 926 967 366</span></li>
         <li><i class="icon-mail"></i><a href="#"><span>info@studiotagus.com</span></a></li>
@@ -72,7 +83,8 @@
         <a href="#" id="formSubmit" type="submit">enviar</a>
       </div>
     </form>
-    <div class="contact__message">
+    <div class="contact__message" data-success="A mensagem foi enviada com sucesso. Entraremos em contacto em breve." data-error="A mensagem não foi enviada. Por favor tente novamente.">
+      <p><i></i></p>
     </div>
   </div>
 </section>
@@ -89,8 +101,8 @@
 <script type="text/javascript" src="/scripts/libs/plugins/animation.gsap.min.js"></script>
 <script type="text/javascript" src="/scripts/libs/plugins/debug.addIndicators.min.js"></script>
 <!-- ************  JAVASCRIPT MAIN  ******************** -->
-<script src="/scripts/core/main.js"></script>
-<script src="/scripts/core/bundle.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="/scripts/bundle.js"></script> 
 
 </body>
 
