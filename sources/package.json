@@ -1,6 +1,6 @@
 {
-  "name": "studio tagus",
-  "version": "2.3",
+  "name": "studiotagus",
+  "version": "2.3.0",
   "description": "Studio Tagus home page",
   "main": "gulpfile.js",
   "scripts": {

@@ -37,7 +37,7 @@ gulp.task('templates', () => {
   .pipe(partials({removeTags: true}))
   .pipe(wrap({src: 'layout.html'}))
   .pipe(rename({dirname: ''}))
-  .pipe(gulp.dest('../html/templates'))
+  .pipe(gulp.dest('../'))
   .pipe(browser.reload({stream: true}));
 });
 
