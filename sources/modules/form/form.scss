@@ -1,0 +1,33 @@
+.form{
+  background: #fff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0 20px;
+  .wrapper{
+    margin: 0 auto;
+    max-width: 840px;
+    width: 100%;
+    position: relative;
+    // padding: 0 20px;
+  }
+  &__form{
+    width: 100%;
+  }
+  &__title{
+    @include fontXL;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  &__subtitle{
+    @include fontL;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__textarea{
+    height: 150px;
+  }
+
+}

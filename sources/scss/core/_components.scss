@@ -135,6 +135,9 @@ textarea {
 textarea {
    resize: none;
 }
+label{
+  @include fontM;
+}
 input:not([type="submit"]) {
   line-height: 40px;
   padding-left: 20px;
