@@ -61,7 +61,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @include tablet {
+    @include laptop {
       height: 70vh;
     }
     @include mobile {

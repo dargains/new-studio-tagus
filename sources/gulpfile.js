@@ -9,7 +9,14 @@ const gulp = require('gulp'),
       partials = require('gulp-inject-partials'),
       babel = require('gulp-babel'),
       concat = require('gulp-concat'),
+      index = require('gulp-index'),
       autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('html:buildIndex', () =>
+  gulp.src('modules/**/*.*')
+    .pipe(index())
+    .pipe(gulp.dest('../'))
+);
 
 gulp.task('sass', () => {
   return gulp.src('scss/*.scss')
@@ -69,5 +76,6 @@ gulp.task('default', [
   'modules',
   'templates',
   'watch',
-  'browser-sync'
+  'browser-sync',
+  'html:buildIndex'
 ]);

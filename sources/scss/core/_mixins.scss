@@ -2,7 +2,7 @@
 //responsive
 $mobile: 512px;
 $tablet: 1024px;
-$laptop: 1280px;
+$laptop: 1366px;
 @mixin mobile {
     @media (min-width: 0px) and (max-width: #{$mobile}) {
         @content;
@@ -55,8 +55,8 @@ $laptop: 1280px;
   }
 }
 @mixin fontL {
-  font-family: $Raleway;
-  font-weight: $Regular;
+  font-family: $Lato;
+  font-weight: $Light;
   font-size: $fontsize18;
   line-height: 140%;
   -webkit-font-smoothing: antialiased;
@@ -66,7 +66,7 @@ $laptop: 1280px;
   }
 }
 @mixin fontM {
-  font-family: $Raleway;
+  font-family: $Lato;
   font-weight: $Regular;
   font-size: $fontsize16;
   line-height: 140%;
@@ -75,25 +75,13 @@ $laptop: 1280px;
   }
 }
 @mixin fontButton {
-  font-family: $Raleway;
-  font-weight: $SemiBold;
+  font-family: $Lato;
+  font-weight: $Regular;
   font-size: $fontsize18;
-  text-transform: uppercase;
+  line-height: 140%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include mobile {
     font-size: $fontsize16;
   }
 }
-//
-// @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
-//     @font-face {
-//         font-family: $font-family;
-//         src: url('#{$file-path}.eot');
-//         src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), //url('#{$file-path}.woff') format('woff'),
-//         url('#{$file-path}.ttf') format('truetype'),
-//         url('#{$file-path}.svg##{$font-family}') format('svg');
-//         font-weight: $font-weight;
-//         font-style: $font-style;
-//     }
-// }

@@ -12,6 +12,25 @@
   z-index: 5;
   top: 20px;
   right: 20px;
+  p {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 5px gray;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pt {
+    background-image: url(/images/pt-flag.png);
+  }
+  #en {
+    background-image: url(/images/usa-flag.png);
+  }
 }
 
 .button {
@@ -122,7 +141,7 @@ textarea {
   line-height: 40px;
   padding-left: 20px;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
   outline: 0;
   border: none;
   background-color: transparent;
@@ -149,7 +168,7 @@ textarea.error {
 .titleBlock {
   border-bottom: 1px solid $color-background-dark;
   font-size: 0;
-
+  width: 100%;
   .left-block,
   .right-block {
     display: inline-block;

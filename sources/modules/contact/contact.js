@@ -22,6 +22,7 @@ ST.CONTACT = (function() {
       view.titleBlock = view.el.find(".titleBlock");
       view.itemsBlock = view.el.find(".contact__textblock");
       view.messageBlock = view.el.find(".contact__message");
+      view.formBlock = view.el.find(".contact__form");
       view.titleTemplate = `
         <div class="left-block">
           <h1 class="left-block__title">{{title}}</h1>
@@ -34,13 +35,22 @@ ST.CONTACT = (function() {
           <h1 class="contact__title">{{title}}</h1>
           <p class="contact__text">{{text}}</p>
         {{/each}}`;
+      view.formTemplate = `
+        <form class="contact__form">
+          <input type="text" id="userName" name="nome" placeholder="{{name}} *">
+          <input type="email" id="userEmail" name="email" placeholder="{{email}} *">
+          <textarea name="msg" id="userMessage" placeholder="{{message}}"></textarea>
+          <div class="btn-accent">
+            <a href="#" id="formSubmit" type="submit">{{submit}}</a>
+          </div>
+        </form>`;
       view.titlePT = {
         "title": "Contacto",
-        "subtitle": "Somos uma equipa de desevolvedores web baseados em Lisboa, Portugal. Nós nos orgulhamos em entregar websites de qualidade com eficiência e profissionalismo."
+        "subtitle": "Entre em contacto connosco para que possamos trabalhar juntos."
       };
       view.titleEN = {
         "title": "Contact",
-        "subtitle": "We are a team of web developers located in Lisbon, Portugal. We are proud to deliver high quality websites with professionalism and efficiency."
+        "subtitle": "Get in touch for us to start working together."
       };
       view.itemsPT = {
         "items": [
@@ -66,6 +76,18 @@ ST.CONTACT = (function() {
           }
         ]
       }
+      view.formPT = {
+        "name": "Seu nome",
+        "email": "Seu e-mail",
+        "message": "Mensagem",
+        "submit": "enviar"
+      };
+      view.formEN = {
+        "name": "Your name",
+        "email": "Your e-mail",
+        "message": "Message",
+        "submit": "submit"
+      };
       view.succcessMessageTemplate = `
         <p><i class='icon-checked'></i>{{message}}</p>
         `;
@@ -97,12 +119,14 @@ ST.CONTACT = (function() {
       view.lang = "PT";
       view.titleBlock.html(Handlebars.compile(view.titleTemplate)(view.titlePT));
       view.itemsBlock.html(Handlebars.compile(view.itemsTemplate)(view.itemsPT));
+      view.formBlock.html(Handlebars.compile(view.formTemplate)(view.formPT));
     },
     insertTextEN: function() {
       var view = this;
       view.lang = "EN";
       view.titleBlock.html(Handlebars.compile(view.titleTemplate)(view.titleEN));
       view.itemsBlock.html(Handlebars.compile(view.itemsTemplate)(view.itemsEN));
+      view.formBlock.html(Handlebars.compile(view.formTemplate)(view.formEN));
     },
     getClientInfo: function() {
       var view = this;

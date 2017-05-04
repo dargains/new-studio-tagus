@@ -132,13 +132,13 @@ ST.PORTFOLIO = (function() {
             "title": "Megalancers",
             "subtitle": "Website",
             "text": "Megalancers is a maketplace for fans to connect with Influencers like artists, bloggers and celebrities. Browse through activities and profiles, and hire your influencer!",
-            "image": "icon-heart"
+            "image": "/images/megalancers.jpg"
           },
           {
             "title": "Fox Life",
             "subtitle": "Concept, Branding, Website",
             "text": "Fox Life is a television network, launched by the Fox Broadcasting Company, which airs across Latin America, Europe and Japan. Its basic programming include numerous television series, sitcoms and movies, among others, which includes some original programming in certain regions.",
-            "image": "icon-heart"
+            "image": "/images/foxlife.jpg"
           }
         ]
       };

@@ -18,7 +18,7 @@
 	<meta property="og:url" content="www.studiotagus.com" />
 	<meta property="og:description" content="Studio Tagus web development" />
 	<meta property="og:site_name" content="Studio Tagus" />
-	<meta property="og:image" content="" />
+	<meta property="og:image" content="images/Tagus logo.svg" />
 	<meta property="og:locale" content="pt_PT" />
 	<meta property="og:type" content="website" />
 	<!--twitter meta-->
@@ -38,7 +38,7 @@
 	<link rel="icon" type="image/ico" href="/images/favicon.ico" />
 	<!--Links-->
 	<link rel="stylesheet" href="/css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300|Raleway:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300|Lato:300,400" rel="stylesheet">
 </head>
 <!--GA-->
 <script>
@@ -52,23 +52,25 @@
 </script>
 
 <body>
+<div class="lang">
+	<p id="pt"></p>
+	<p id="en"></p>
+</div>
 <section class="hero" data-control="HERO" id="triggerHero">
   <div id="darkmask"></div>
   <article>
     <div class="hero__mask"></div>
-    <!-- <div class="lang">
-      <p id="pt">PT</p>
-      <p id="en">EN</p>
-    </div> -->
     <img src="/images/Tagus logo.svg" alt="Studio Tagus" id="tagus">
-    <div id="triggerLogo"></div>
     <div class="hero__textbox">
-      <img src="/images/Tagus White.png" alt="">
+      <img src="/images/Tagus White.png" alt="Studio Tagus">
       <!-- <div class="hero__textbox-mask"></div>
       <h1 class="studio">Studio</h1>
       <h1 class="tagus">Tagus</h1>
       <h3>Web development</h3> -->
     </div>
+    <div id="triggerLogo"></div>
+    <div id="triggerSchool"></div>
+    <div id="triggerAgainst"></div>
   </article>
 </section>
 
@@ -235,7 +237,7 @@
 <script type="text/javascript" src="/scripts/libs/plugins/debug.addIndicators.min.js"></script>
 <!-- ************  JAVASCRIPT MAIN  ******************** -->
 <script src="/scripts/main.js"></script>
-<script src="/scripts/bundle.js"></script> 
+<script src="/scripts/bundle.js"></script>
 
 </body>
 
