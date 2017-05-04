@@ -1,6 +1,9 @@
 .contact {
   background: $color-background-light;
   padding-bottom: 40px;
+  .titleBlock{
+    width: 100%;
+  }
   &__details {
     padding-top: 40px;
     background: transparent;
